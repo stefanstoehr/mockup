@@ -1,0 +1,802 @@
+body {
+    margin:             0;
+    padding:            0;
+    border:             0;
+    height:             100%;
+    width:              100%; 
+    overflow:           hidden;
+    background-color:   black;
+}
+
+/* THREEJS */
+
+#threejsLayout {
+    position:           absolute;
+    height:             100%;
+    width:              100%;
+}
+
+/* MENUE */
+
+.menue {
+    width: 				44px;
+    height: 			100%;
+    position: 			absolute;
+    background-color:   rgb(50, 50, 50);
+}
+
+.itemSet {
+    float:              left;
+    width:              44px;
+    height:             44px;
+    margin:             0;
+    padding-left:       0;
+    border:             0;
+}
+
+.itemSet:hover {
+    background:         rgb(0, 139, 139);
+}
+
+#killClick {
+    visibility: hidden;
+}
+
+#accountFunc {
+    visibility:         hidden;
+}
+
+/* NAVBAR */
+
+#up{
+    visibility:         hidden;
+}
+
+#left{
+    visibility:         hidden;
+}
+
+#right{
+    visibility:         hidden;
+}
+
+.horizontalbox {
+    margin:             0;
+    padding:            0;
+    border:             0;
+    position:           absolute;
+    width:              44px;
+    height:             20px;
+    background:         black;
+    z-index:            3;
+}
+
+.horizontalbox:hover {
+    background:         darkcyan;
+}
+
+.verticalbox {
+    margin:             0;
+    padding:            0;
+    border:             0;
+    position:           absolute;
+    width:              20px;
+    height:             44px;
+    background:         black;
+    z-index:            3;
+}
+
+.verticalbox:hover {
+    background:         darkcyan;
+}
+
+.top                    {top:0}
+.middle                 {top:50%;margin-top:-22px/*half of the .box height*/}
+.bottom                 {bottom:0}
+
+.left                   {left:44px}
+.center                 {left:50%;margin-left:-22px/*half of the .box width*/}
+.right                  {right:0}
+
+/* SVG CODE */
+
+#flag {
+    box-shadow:         24px 15px 0 0 #FFFFFF,27px 15px 0 0 #FFFFFF,15px 15px 0 0 #FFFFFF,18px 15px 0 0 #FFFFFF,21px 15px 0 0 #FFFFFF,24px 18px 0 0 #FFFFFF,15px 18px 0 0 #FFFFFF,18px 18px 0 0 #FFFFFF,21px 18px 0 0 #FFFFFF,15px 21px 0 0 #FFFFFF,18px 21px 0 0 #FFFFFF,21px 21px 0 0 #FFFFFF,15px 24px 0 0 #FFFFFF,15px 27px 0 0 #FFFFFF;
+    height:             2px;
+    width:              2px;
+}
+
+#mesh {
+    box-shadow:         24px 21px 0 0 #FFFFFF,15px 21px 0 0 #FFFFFF,18px 21px 0 0 #FFFFFF,21px 21px 0 0 #FFFFFF,24px 18px 0 0 #FFFFFF,27px 18px 0 0 #FFFFFF,15px 18px 0 0 #FFFFFF,18px 18px 0 0 #FFFFFF,21px 18px 0 0 #FFFFFF,15px 24px 0 0 #FFFFFF,18px 24px 0 0 #FFFFFF,21px 24px 0 0 #FFFFFF;
+    height:             2px;
+    width:              2px;
+}
+
+#info {
+    box-shadow:         21px 15px 0 0 #FFFFFF,21px 21px 0 0 #FFFFFF,21px 24px 0 0 #FFFFFF,21px 27px 0 0 #FFFFFF;
+    height:             2px;
+    width:              2px;
+}
+
+#plus {
+    box-shadow:         21px 18px 0 0 #FFFFFF,24px 21px 0 0 #FFFFFF,18px 21px 0 0 #FFFFFF,21px 21px 0 0 #FFFFFF,21px 24px 0 0 #FFFFFF;
+    height:             2px;
+    width:              2px;
+}
+
+#edit {
+    box-shadow:         24px 15px 0 0 #FFFFFF,27px 15px 0 0 #FFFFFF,24px 18px 0 0 #FFFFFF,27px 18px 0 0 #FFFFFF,21px 18px 0 0 #FFFFFF,24px 21px 0 0 #FFFFFF,18px 21px 0 0 #FFFFFF,21px 21px 0 0 #FFFFFF,18px 24px 0 0 #FFFFFF,21px 24px 0 0 #FFFFFF,15px 27px 0 0 #FFFFFF;
+    height:             2px;
+    width:              2px;
+}
+
+#key {
+    box-shadow:         24px 18px 0 0 #FFFFFF,27px 18px 0 0 #FFFFFF,24px 21px 0 0 #FFFFFF,27px 21px 0 0 #FFFFFF,15px 21px 0 0 #FFFFFF,18px 21px 0 0 #FFFFFF,21px 21px 0 0 #FFFFFF,24px 24px 0 0 #FFFFFF,27px 24px 0 0 #FFFFFF,18px 24px 0 0 #FFFFFF;
+    height:             2px;
+    width:              2px;
+}
+
+#download {
+    box-shadow:         24px 15px 0 0 #FFFFFF,18px 15px 0 0 #FFFFFF,21px 15px 0 0 #FFFFFF,21px 18px 0 0 #FFFFFF,24px 24px 0 0 #FFFFFF,18px 24px 0 0 #FFFFFF,21px 24px 0 0 #FFFFFF,21px 27px 0 0 #FFFFFF;
+    height:             2px;
+    width:              2px;
+}
+
+#kill {
+    box-shadow:         27px 15px 0 0 #FFFFFF,15px 15px 0 0 #FFFFFF,24px 18px 0 0 #FFFFFF,18px 18px 0 0 #FFFFFF,21px 21px 0 0 #FFFFFF,24px 24px 0 0 #FFFFFF,18px 24px 0 0 #FFFFFF,27px 27px 0 0 #FFFFFF,15px 27px 0 0 #FFFFFF;
+    height:             2px;
+    width:              2px;
+}
+
+#arrowleft {
+    box-shadow:         9px 18px 0 0 #FFFFFF,6px 21px 0 0 #FFFFFF,9px 24px 0 0 #FFFFFF;
+    height:             2px;
+    width:              2px;
+}
+
+#arrowright {
+    box-shadow:         9px 24px 0 0 #FFFFFF,12px 21px 0 0 #FFFFFF,9px 18px 0 0 #FFFFFF;
+    height:             2px;
+    width:              2px;
+}
+
+#arrowdown {
+    box-shadow:         18px 9px 0 0 #FFFFFF,21px 12px 0 0 #FFFFFF,24px 9px 0 0 #FFFFFF;
+    height:             2px;
+    width:              2px;
+}
+
+#arrowup {
+    box-shadow:         24px 9px 0 0 #FFFFFF,21px 6px 0 0 #FFFFFF,18px 9px 0 0 #FFFFFF;
+    height:             2px;
+    width:              2px;
+}
+
+/* ASSET - INFO - VIEW */
+
+#meshinfo {
+    height: 			auto;
+    bottom: 			20px;
+    left: 				64px;
+    position: 			absolute;
+    visibility:         hidden;
+}
+
+.klein {
+    font-family:        "LatoLatinWebRegular"; 
+    font-size:          12px;
+    color:              rgb(100, 100, 100);
+    display:            inline-block;
+    margin-top:         10px;
+}
+
+.hoch {
+    font-family:        "LatoLatinWebRegular"; 
+    font-size:          14px;
+    color:              rgb(255, 255, 255); 
+    display:            inline-block;
+    margin:             0;
+}
+
+.meshinfoFunc {
+    background-color:   rgb(50, 50, 50);
+    color:              rgb(255, 255, 255);
+    font-family:        "LatoLatinWebRegular"; 
+    font-size:          12px;
+    cursor:             pointer;
+    display:            inline-block;
+    margin-left:        5px;
+}
+
+.meshinfoFunc:hover {
+    color:              darkcyan;
+}
+
+/* COMMENTATION STYLE */
+
+@font-face {
+    font-family:        'LatoLatinWebBlackItalic';
+    src:                url('../fonts/LatoLatin-BlackItalic.woff') format('woff');
+       
+}
+
+@font-face {
+    font-family:        'LatoLatinWebRegular';
+    src:                url('../fonts/LatoLatin-Regular.woff') format('woff');
+       
+}
+
+@font-face {
+    font-family:        'LatoLatinWebItalic';
+    src:                url('../fonts/LatoLatin-Italic.woff') format('woff');
+    
+}
+
+/* COMMENTATION */
+
+#discussBtn {
+    width:              258px;
+    height:             auto;
+    background-color:   rgb(50, 50, 50);
+    font-family:        "LatoLatinWebRegular"; 
+    font-size:          12px;
+    font-style:         normal;
+    color:              rgb(255, 255, 255);
+    text-align:         center;
+    padding:            4px;
+    cursor:             pointer;
+}
+
+#discussBtn:hover {
+    color:   rgb(0, 139, 139);
+}
+
+.shieldBtn {
+    width:              258px;
+    height:             15px;
+    background-color:   rgba(0, 0, 0, 0.5);
+    padding:            4px;
+    position:           absolute;
+    visibility:         hidden;
+}
+
+.shieldGuard {
+    width:              258px;
+    height:             15px;
+    background-color:   rgba(0, 0, 0, 0.5);
+    padding:            4px;
+    position:           absolute;
+    left:               0;
+    margin-top:         -4px;
+    visibility:         hidden;
+}
+
+.commentationAreaClass {
+    width: 				266px;
+    height: 			100%;
+    top: 			    20px;
+    right: 				20px;
+    position: 			absolute;
+    overflow-y:         scroll;
+    overflow-x:         scroll;
+    white-space:        nowrap;
+}
+
+#commentationAreaID {
+    visibility:         hidden;
+}
+
+.commentationAreaClass::-webkit-scrollbar {
+    width:              0px;                   
+    background-color:   rgba(0, 0, 0, 0);    
+    border-radius:      0px;       
+    border:             0px solid rgba(0, 0, 0, 0);
+  }
+
+.commentationWriteClass {      
+    width:              266px;
+    height:             auto;
+    display:            table;
+}
+
+.commentationUsernameClass {
+    width:              125px;
+    height:             auto;
+    padding:            4px;
+    background-color:   rgb(0, 0, 0);
+    font-family:        "LatoLatinWebRegular"; 
+    font-size:          12px;
+    font-style:         normal;
+    color:              rgb(100, 100, 100);
+    text-align:         left;
+    float:              left;
+    display:            table-cell;
+}
+
+.usernamePostClass {
+    width:              125px;
+    height:             auto;
+    padding:            4px;
+    background-color:   rgb(0, 0, 0);
+    font-family:        "LatoLatinWebRegular"; 
+    font-size:          12px;
+    font-style:         normal;
+    color:              rgb(100, 100, 100);
+    text-align:         left;
+    float:              left;
+    display:            table-cell;
+    border-top:         1px solid rgb(0, 139, 139);
+}
+
+.usernameAnswerClass {
+    width:              125px;
+    height:             auto;
+    padding:            4px;
+    background-color:   rgb(0, 0, 0);
+    font-family:        "LatoLatinWebRegular"; 
+    font-size:          12px;
+    font-style:         normal;
+    color:              rgb(100, 100, 100);
+    text-align:         left;
+    float:              left;
+    display:            table-cell;
+    border-top:         1px solid rgb(0, 0, 0);
+}
+
+.commentationDateAndTimeClass {
+    width:              125px;
+    height:             auto;
+    padding:            4px;
+    background-color:   rgb(0, 0, 0);
+    font-family:        "LatoLatinWebRegular"; 
+    font-size:          12px;
+    font-style:         normal;
+    color:              rgb(100, 100, 100);
+    text-align:         right;
+    float:              left;
+    display:            table-cell;
+}
+
+.dateAndTimePostClass {
+    width:              125px;
+    height:             auto;
+    padding:            4px;
+    background-color:   rgb(0, 0, 0);
+    font-family:        "LatoLatinWebRegular"; 
+    font-size:          12px;
+    font-style:         normal;
+    color:              rgb(100, 100, 100);
+    text-align:         right;
+    float:              left;
+    display:            table-cell;
+    border-top:         1px solid rgb(0, 139, 139);
+}
+
+.dateAndTimeAnswerClass {
+    width:              125px;
+    height:             auto;
+    padding:            4px;
+    background-color:   rgb(0, 0, 0);
+    font-family:        "LatoLatinWebRegular"; 
+    font-size:          12px;
+    font-style:         normal;
+    color:              rgb(100, 100, 100);
+    text-align:         right;
+    float:              left;
+    display:            table-cell;
+    border-top:         1px solid rgb(0, 0, 0);
+}
+
+.commentationTitleWriteClass {
+    width:              258px;
+    height:             auto;
+    padding-left:       4px;
+    padding-right:      4px;
+    background-color:   rgb(100, 100, 100);
+    font-family:        "LatoLatinWebRegular"; 
+    font-size:          16px;
+    font-style:         normal;
+    color:              rgb(255, 255, 255);
+    text-align:         left;
+    float:              left;
+    display:            table-cell;
+    border-bottom:      1px solid rgb(0, 0, 0);
+    border-top:         0;
+    border-left:        0;
+    border-right:       0;
+    margin:             0;
+    outline:            none;
+    resize:             none;
+}
+
+.commentationTextWriteClass {
+    width:              258px;
+    height:             150px;
+    padding-left:       4px;
+    padding-right:      4px;
+    background-color:   rgb(100, 100, 100);
+    font-family:        "LatoLatinWebRegular"; 
+    font-size:          15px;
+    font-style:         normal;
+    color:              rgb(255, 255, 255);
+    text-align:         left;
+    float:              left;
+    display:            table-cell;   
+    border:             none;
+    margin-top:         0px;
+    margin-bottom:      0px;
+    outline:            none;
+    resize:             none;
+}
+
+.commentationFunctions {
+    display:            grid;
+    width:              258px;
+    grid-template-columns: 1fr 1fr 1fr;
+    float:              left;
+    height:             auto;
+    padding:            4px;
+    background-color:   rgb(50, 50, 50);
+    font-family:        "LatoLatinWebRegular"; 
+    font-size:          12px;
+    font-style:         normal;
+    color:              rgb(255, 255, 255);
+    cursor:             pointer;
+}
+
+.commentationPost {
+    text-align:     left;
+    color:          rgb(255, 255, 255);
+}
+
+.commentationPost:hover {
+    color:         darkcyan;
+}
+
+.commentationEdit {
+    text-align:     left;
+    color:          rgb(255, 255, 255);
+}
+
+.commentationEdit:hover {
+    color:         darkcyan;
+}
+
+.commentationSave {
+    text-align:     left;
+    color:          rgb(255, 255, 255);
+}
+
+.commentationSave:hover {
+    color:         darkcyan;
+}
+
+.commentationAnswer {
+    text-align:     center;
+    color:          rgb(255, 255, 255);
+}
+
+.commentationAnswer:hover {
+    color:         darkcyan;
+}
+
+.commentationCancelPost {
+    text-align:     right;
+    color:          rgb(255, 255, 255);
+}
+
+.commentationCancelPost:hover {
+    color:         darkcyan;
+}
+
+.commentationCancel {
+    text-align:     right;
+    color:          rgb(255, 255, 255);
+}
+
+.commentationCancel:hover {
+    color:         darkcyan;
+}
+
+.commentationDelete {
+    text-align:     right;
+    color:          rgb(255, 255, 255);
+}
+
+.commentationDelete:hover {
+    color:         darkcyan;
+}
+
+.commentationNotAnswer {
+    text-align:     right;
+    color:          rgb(255, 255, 255);
+}
+
+.commentationNotAnswer:hover {
+    color:         darkcyan;
+}
+
+/* COMMENTATION USER */
+
+.commentationReadClass {      
+    width:              266px;
+    height:             auto;
+    display:            table;
+}
+
+.commentationTitleReadClass {
+    width:              258px;
+    height:             auto;
+    padding-left:       4px;
+    padding-right:      4px;
+    padding-top:        2px;
+    padding-bottom:     3px;
+    background-color:   rgb(0, 0, 0);
+    font-family:        "LatoLatinWebBlackItalic"; 
+    font-size:          16px;
+    color:              rgb(0, 139, 139);
+    text-align:         left;
+    float:              left;
+    display:            table-cell;
+    border:             none;
+}
+
+.commentationTextReadClass {
+    width:              258px;
+    height:             auto;
+    padding-left:       4px;
+    padding-right:      4px;
+    padding-top:        3px;
+    padding-bottom:     2px;
+    background-color:   rgb(0, 0, 0);
+    font-family:        "LatoLatinWebItalic"; 
+    font-size:          15px;
+    color:              rgb(255, 255, 255);
+    text-align:         left;
+    float:              left;
+    display:            table-cell;   
+    border:             none;
+    white-space:        normal;
+}
+
+/* LOGIN */
+
+#loginModalMasterClass {
+    visibility:         hidden;
+    position:           absolute;
+    height:             100vh;
+    width:              100vw;
+    z-index:            4;
+}
+
+#frame {
+    display:            flex;
+    justify-content:    center;
+    height:             100vh;
+    background-color:   rgb(0, 0, 0);
+    flex-direction:     column;
+    align-items:        center
+}
+
+#loginTextareaUsername{
+    width:              258px;
+    height:             auto;
+    padding-left:       4px;
+    padding-right:      4px;
+    background-color:   rgb(100, 100, 100);
+    font-family:        "LatoLatinWebRegular"; 
+    font-size:          1em;
+    font-style:         normal;
+    color:              rgb(255, 255, 255);
+    text-align:         left;
+    border-bottom:      1px solid rgb(0, 0, 0);
+    border-top:         0;
+    border-left:        0;
+    border-right:       0;
+    margin:             0;
+    outline:            none;
+    resize:             none;
+}
+
+#loginTextareaPassword{
+    width:              258px;
+    height:             auto;
+    padding-left:       4px;
+    padding-right:      4px;
+    background-color:   rgb(100, 100, 100);
+    font-family:        "LatoLatinWebRegular"; 
+    font-size:          1em;
+    font-style:         normal;
+    color:              rgb(255, 255, 255);
+    text-align:         left;
+    border-bottom:      1px solid rgb(0, 0, 0);
+    border-top:         0;
+    border-left:        0;
+    border-right:       0;
+    margin:             0;
+    outline:            none;
+    resize:             none;
+}
+
+#loginTextareaMail{
+    width:              258px;
+    height:             auto;
+    padding-left:       4px;
+    padding-right:      4px;
+    background-color:   rgb(100, 100, 100);
+    font-family:        "LatoLatinWebRegular"; 
+    font-size:          1em;
+    font-style:         normal;
+    color:              rgb(255, 255, 255);
+    text-align:         left;
+    border-bottom:      1px solid rgb(0, 0, 0);
+    border-top:         0;
+    border-left:        0;
+    border-right:       0;
+    margin:             0;
+    outline:            none;
+    resize:             none;
+}
+
+.loginButtons{
+    width:              66.5px;
+    height:             auto;
+    padding-top:        4px;
+    padding-bottom:     4px;
+    background-color:   rgb(0, 0, 0);
+    font-family:        "LatoLatinWebRegular"; 
+    font-size:          0.8em;
+    font-style:         normal;
+    color:              rgb(100, 100, 100);
+    text-align:         center;
+    float:              left;
+    border-bottom:      1px solid rgb(0, 139, 139);
+    cursor:             pointer;
+}
+
+#loginFunctions {
+    visibility:         hidden;
+}
+
+/* ACCOUNT-BASIC */
+
+#modalAccountBasicID {
+    visibility:         hidden;
+    position:           absolute;
+    height:             100vh;
+    width:              100vw;
+    z-index:            2;
+}
+
+/* #frame -> siehe oben unter "LOGIN" */
+
+.accountUserPassMailClassRead {
+    width:              258px;
+    height:             auto;
+    padding-left:       4px;
+    padding-right:      4px;
+    background-color:   rgb(0, 0, 0);
+    font-family:        "LatoLatinWebRegular"; 
+    font-size:          1em;
+    font-style:         normal;
+    color:              rgb(0, 139, 139);
+    text-align:         left;
+    border-bottom:      1px solid rgb(0, 0, 0);
+    border-top:         0;
+    border-left:        0;
+    border-right:       0;
+    margin:             0;
+    outline:            none;
+    resize:             none;
+}
+
+.accountUserPassMailClassWrite {
+    width:              258px;
+    height:             auto;
+    padding-left:       4px;
+    padding-right:      4px;
+    background-color:   rgb(100, 100, 100);
+    font-family:        "LatoLatinWebRegular"; 
+    font-size:          1em;
+    font-style:         normal;
+    color:              rgb(255, 255, 255);
+    text-align:         left;
+    border-bottom:      1px solid rgb(0, 0, 0);
+    border-top:         0;
+    border-left:        0;
+    border-right:       0;
+    margin:             0;
+    outline:            none;
+    resize:             none;
+}
+
+.accountEditSaveClass {
+    width:              125px;
+    height:             auto;
+    padding:            4px;
+    background-color:   rgb(0, 0, 0);
+    font-family:        "LatoLatinWebRegular"; 
+    font-size:          12px;
+    font-style:         normal;
+    color:              rgb(100, 100, 100);
+    text-align:         left;
+    float:              left;
+    display:            table-cell;
+    border-bottom:      1px solid rgb(0, 139, 139);
+    cursor:             pointer;
+}
+
+.accountDeleteCancelClass {
+    width:              125px;
+    height:             auto;
+    padding:            4px;
+    background-color:   rgb(0, 0, 0);
+    font-family:        "LatoLatinWebRegular"; 
+    font-size:          12px;
+    font-style:         normal;
+    color:              rgb(100, 100, 100);
+    text-align:         right;
+    float:              left;
+    display:            table-cell;
+    border-bottom:      1px solid rgb(0, 139, 139);
+    cursor:             pointer;
+}
+
+ /* LIS HELPER */
+
+#lisConOne {
+    position: absolute;
+    visibility: hidden;
+    height: 100%;
+    width: 100%;
+    overflow:auto;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 10;
+}
+
+#lisConTwo {
+    margin-top: 45px;
+    margin-left: 45px;
+    margin-right: 45px;
+    padding-bottom: 45px;
+}
+
+#lisConThree {  
+    margin-top:0;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 300px;
+    text-align: left;
+}
+
+#headline {
+    font-family: 'LatoLatinWebBlackItalic'; 
+    font-size: 36px; 
+    color: whitesmoke;
+}
+
+#subline {
+    font-family: 'LatoLatinWebBlackItalic'; 
+    font-size: 14px; 
+    color: whitesmoke;
+}
+
+#note {
+    font-family: 'LatoLatinWebRegular'; 
+    font-size: 14px; 
+    color: rgb(157,157,157);
+}
+
+a:link    { color: rgb(157,157,157) }
+a:visited { color: rgb(157,157,157) }
+a:focus   { color: rgb(157,157,157) }
+a:hover   { color: rgb(157,157,157) }
+a:active  { color: rgb(157,157,157) }
+
+#lisHelpClose {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    background-color: rgb(124, 85, 196);
+    font-size: 0.9em;
+}

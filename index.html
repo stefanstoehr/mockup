@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>disconstruct beta</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="./css/discon.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+        <link rel="manifest" href="./favicon/site.webmanifest">
+        <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#5bbad5">
+	</head>
+	<body>
+		
+<!-- 1. -->
+<!-- THREEJS -->
+
+<div id="threejsLayout"></div>
+
+<!-- 4. -->
+<!-- CONSTRUCTION-INFO -->
+
+<div id="meshinfo"></div>
+
+
+<!-- 2. -->
+<!-- MENUE -->
+
+<div class="menue">
+	<div class="itemSet" id="flagClick">
+		<div id="flag"></div>
+	</div>
+	<div class="itemSet" id="infoClick">
+		<div id="info"></div>
+	</div>
+	<div class="itemSet" id="commentsClick">
+		<div id="mesh"></div>
+	</div>
+	<div class="itemSet" id="loginClick">
+		<div id="key"></div>
+	</div>
+    <div id="accountFunc">
+        <div class="itemSet" id="uploadClick">
+            <div id="plus"></div>
+        </div>
+        <div class="itemSet" id="downloadClick">
+            <div id="download"></div>
+        </div>
+        <div class="itemSet" id="killClick">
+            <div id="kill"></div>
+        </div>
+    </div>
+</div>
+
+<!-- 3. -->            
+<!-- NAVBAR -->
+
+<div>
+	<div class="horizontalbox top center" id="up">
+        <div id="arrowup">                    
+        </div>
+	</div>
+    <div class="verticalbox middle left" id="left">
+        <div id="arrowleft">
+        </div>
+	</div>
+	<div class="verticalbox middle right" id="right">
+        <div id="arrowright">
+        </div>
+	</div>
+	<div class="horizontalbox bottom center" id="down">    
+        <div id="arrowdown">
+        </div>
+	</div>			
+</div>
+
+<!-- 5. -->
+<!-- DISCUSSION --> 
+
+<div class="commentationAreaClass" id="commentationAreaID">		
+	<div class="commentationWriteClass" id="commentationWriteID">
+		<div class="shieldBtn" id="discussBtnShield"></div>
+		<div id="discussBtn">start a question</div>
+	</div>			
+</div>
+
+<!-- 6. -->
+<!-- LOGIN POPUP -->
+
+<div id="loginModalMasterClass">
+	<div id="frame">
+		<textarea id="loginTextareaUsername" rows="1" maxlength="40" placeholder="name"></textarea>
+		<textarea id="loginTextareaPassword" rows="1" maxlength="40" placeholder="password"></textarea>
+		<textarea id="loginTextareaMail" rows="1" maxlength="40" placeholder="mail"></textarea>
+		<div>
+			<four class="loginButtons" id="loginBtn">login</four><five class="loginButtons" id="loginCreatBtn">create</five><six class="loginButtons" id="loginLostBtn">lost</six><seven class="loginButtons" id="loginCancelBtn">cancel</seven>
+		</div>
+	</div>
+</div>
+		
+<!-- 7. -->
+<!-- ACCOUNT-BASIC POPUP -->
+
+<div id="modalAccountBasicID">
+	<div id="frame">
+		<div class="accountUserPassMailClassRead" id="accountUsernameIDRead"></div>
+		<div class="accountUserPassMailClassRead" id="accountPasswordIDRead"></div>
+		<div class="accountUserPassMailClassRead" id="accountMailIDRead"></div>
+		<div>
+			<div class="accountEditSaveClass" id="accountEditSaveID">edit</div>
+			<div class="accountDeleteCancelClass" id="accountDeleteCancelID">delete</div>
+		</div>
+	</div>
+</div>
+
+<!-- LIS HELPER AREA -->
+<div id="lisConOne" name="lisHelpModal">
+    <div id="lisHelpClose">&nbsp;close&nbsp;</div>
+    <div id="lisConTwo">
+        <div id="lisConThree">
+            <p id="headline">sharing options</p>
+            <p><span id="subline">a brief introduction in creative commons</span><br><span id="note">the license helps creators retain copyright while allowing others to copy, distribute, and make some uses of their work — at least non-commercially.</span></p>
+            <p><span id="subline">1. CC BY</span><br><span id="note">the downloader can do everything, as long as they credit you for the original creation.</span></p>
+            <p><span id="subline">2. CC BY-SA</span><br><span id="note">like above but the downloader must share the new output based on your creation by using exactly this license.</span></p>
+            <p><span id="subline">2. CC BY-ND</span><br><span id="note">the downloader can share only your original creation and has to credit you of course.</span></p>
+            <p><span id="subline">4. CC BY-NC</span><br><span id="note">as long as it is for non-commercial purpose everything is legal if you get mentioned as creator.</span></p>
+            <p><span id="subline">5. CC BY-NC-SA</span><br><span id="note">like above but the downloader must use exactly this license for sharing, means under identical terms.</span></p>
+            <p><span id="subline">6. CC BY-NC-ND</span><br><span id="note">sharing only for non-profit use and only in the original form.</span></p>
+            <p><span id="subline">7. All Rights Reserved</span><br><span id="note">only for your private unsharing experiments. it's standard strict copyright and not cc.</span></p>
+            <p><span id="note">visit the <a target="_blank" href="https://creativecommons.org/about/cclicenses/">creative commons</a> project for an complete dive into the rules.</span></p>
+            <p><span id="note">&copy; dreid 2021</span></p>
+        </div>
+    </div>
+</div>
+
+<script type="module" src="./js/discon.js"></script>
+
+</body>
+</html>
