@@ -1,6 +1,6 @@
 # cadgui.de mockup
 
-this is a very individual and early study of the technology three.js, which brings 3d-experiences in the browser. see professional three.js showcases on https://threejs.org/.
+this working mockup is a very individual and early study of the technology three.js, which brings 3d-experiences in the browser. see professional three.js showcases on https://threejs.org/.
 
 ![screenshot](https://raw.githubusercontent.com/stefanstoehr/cadguide/main/img/18.png)
 
