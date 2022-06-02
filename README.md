@@ -18,6 +18,6 @@ the idea and the repo on top of the mockup can be finde here: https://github.com
 
 ![never ending ui](https://raw.githubusercontent.com/stefanstoehr/mockup/main/img-readme/6.jpg)
 
-![last ui](https://raw.githubusercontent.com/stefanstoehr/mockup/main/img-readme/7.png)
+![last ui](https://raw.githubusercontent.com/stefanstoehr/mockup/main/img-readme/7.jpg)
 
 ![the very last ui](https://raw.githubusercontent.com/stefanstoehr/mockup/main/img-readme/8.jpg)
