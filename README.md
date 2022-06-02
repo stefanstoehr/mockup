@@ -10,4 +10,6 @@ i learned basic programming skills with javascript, css and html by realizing th
 
 90% of the time i created designs of the user-interface. and man that's a never ending story. a perfect illustrator-graphic of an ui can hardly transformed into a web-design with css. there are challenges. the hardest is the time. css-programming is so time intensive and frustrating. the graphic of an ui transformed into css will looking different in safari and chrome. give up control and perfection is a skill. the backbone is for localhost usecaes with the logic for a dynamic one-pager. the navigation between the public view and the private view is realized and the hard coded commentation functionality too. the mockup is free from helper frameworks. everything is handmade ;)
 
+![more ui](https://raw.githubusercontent.com/stefanstoehr/mockup/main/img-readme/2.jpg)
+
 the idea and the repo on top of the mockup can be finde here: https://github.com/stefanstoehr/cadguide/blob/main/README.md
