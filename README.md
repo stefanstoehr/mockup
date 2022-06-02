@@ -21,3 +21,5 @@ the idea and the repo on top of the mockup can be finde here: https://github.com
 ![last ui](https://raw.githubusercontent.com/stefanstoehr/mockup/main/img-readme/7.jpg)
 
 ![the very last ui](https://raw.githubusercontent.com/stefanstoehr/mockup/main/img-readme/8.jpg)
+
+:coffee::coffee::coffee: Stefan
