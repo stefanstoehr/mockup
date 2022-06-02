@@ -13,3 +13,11 @@ i learned basic programming skills with javascript, css and html by realizing th
 ![more ui](https://raw.githubusercontent.com/stefanstoehr/mockup/main/img-readme/2.jpg)
 
 the idea and the repo on top of the mockup can be finde here: https://github.com/stefanstoehr/cadguide/blob/main/README.md
+
+![and more ui](https://raw.githubusercontent.com/stefanstoehr/mockup/main/img-readme/5.jpg)
+
+![never ending ui](https://raw.githubusercontent.com/stefanstoehr/mockup/main/img-readme/6.jpg)
+
+![last ui](https://raw.githubusercontent.com/stefanstoehr/mockup/main/img-readme/7.png)
+
+![the very last ui](https://raw.githubusercontent.com/stefanstoehr/mockup/main/img-readme/8.jpg)
